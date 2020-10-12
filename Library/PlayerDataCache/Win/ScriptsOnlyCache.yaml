@@ -3,6 +3,8 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Ball
     - Block
+    - GameStatus
+    - Level
     - LooseCollider
     - Paddle
     - SceneLoader
@@ -56,25 +58,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11488}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12000}
     - Class: 114
-      Script: {instanceID: 12924}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 13244}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13612}
+      Script: {instanceID: 13616}
     - Class: 114
-      Script: {instanceID: 13716}
+      Script: {instanceID: 13720}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 14358}
     - Class: 114
-      Script: {instanceID: 17476}
+      Script: {instanceID: 16010}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -116,22 +118,97 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 12604}
+      Script: {instanceID: 11384}
     - Class: 114
-      Script: {instanceID: 13358}
+      Script: {instanceID: 12000}
     - Class: 114
-      Script: {instanceID: 13386}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 14076}
+      Script: {instanceID: 12608}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 12742}
     - Class: 114
-      Script: {instanceID: 17476}
+      Script: {instanceID: 13280}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 13390}
+    - Class: 114
+      Script: {instanceID: 13616}
+    - Class: 114
+      Script: {instanceID: 13720}
+    - Class: 114
+      Script: {instanceID: 14080}
+    - Class: 114
+      Script: {instanceID: 14358}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Level 2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 50
+      Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
+    - Class: 60
+      Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11384}
+    - Class: 114
+      Script: {instanceID: 12000}
+    - Class: 114
+      Script: {instanceID: 12608}
+    - Class: 114
+      Script: {instanceID: 12742}
+    - Class: 114
+      Script: {instanceID: 13362}
+    - Class: 114
+      Script: {instanceID: 13390}
+    - Class: 114
+      Script: {instanceID: 14080}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -164,29 +241,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11196}
     - Class: 114
-      Script: {instanceID: 11486}
+      Script: {instanceID: 11488}
     - Class: 114
-      Script: {instanceID: 11542}
+      Script: {instanceID: 11544}
     - Class: 114
-      Script: {instanceID: 12208}
+      Script: {instanceID: 12000}
     - Class: 114
-      Script: {instanceID: 12262}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 12924}
+      Script: {instanceID: 12266}
     - Class: 114
-      Script: {instanceID: 13276}
+      Script: {instanceID: 12930}
     - Class: 114
-      Script: {instanceID: 13296}
+      Script: {instanceID: 13280}
     - Class: 114
-      Script: {instanceID: 13716}
+      Script: {instanceID: 13300}
     - Class: 114
-      Script: {instanceID: 14006}
+      Script: {instanceID: 13720}
     - Class: 114
-      Script: {instanceID: 14184}
+      Script: {instanceID: 14010}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 14188}
     - Class: 114
-      Script: {instanceID: 17476}
+      Script: {instanceID: 14358}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -240,6 +317,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: PlayerQuitHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 45084fb9a5f88ea99083fa535993a498
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Level
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -392,6 +475,12 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneLoader
+  - hash:
+      serializedVersion: 2
       Hash: aba7b2852ef61d175dd9602e7723d5e5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -516,6 +605,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 3c8a6f67bcd5f89760e5befb23eecf9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameStatus
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -650,7 +745,7 @@ ScriptsOnlyBuild:
     className: TMP_TextSelector_A
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 926e08167e5c0d030f8baba8a7de2963
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Block
@@ -788,7 +883,7 @@ ScriptsOnlyBuild:
     className: TMPro_InstructionOverlay
   - hash:
       serializedVersion: 2
-      Hash: 4b9c2625b724fc3254e88ab894012370
+      Hash: 54b63069d3c304dea0c8fbedb640a16c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Ball
@@ -912,15 +1007,10 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneLoader
   platform: 5
   scenePathNames:
   - Assets/Scenes/Start Menu.unity
   - Assets/Scenes/Level 1.unity
+  - Assets/Scenes/Level 2.unity
   - Assets/Scenes/GameOver.unity
   playerPath: C:/Users/localadmin/Desktop/ShootBrick/Shoot The Brick.exe
