@@ -3,31 +3,71 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Block : MonoBehaviour
 {
+    // config params
     [SerializeField] AudioClip breakSound;
+    [SerializeField] GameObject blockSparklesVFX;
+    [SerializeField] int maxHits;
 
     // cached reference
     Level level;
-    GameStatus gameStatus;
 
+    // state variables
+    [SerializeField] int timesHit; //TODO only serialized for debug purpose
 
     private void Start()
     {
-        level = FindObjectOfType<Level>();
-        gameStatus = FindObjectOfType<GameStatus>();
+        CountBreakableBlocks();
 
-        level.CountBreakableBlocks();
+    }
+
+    private void CountBreakableBlocks()
+    {
+        level = FindObjectOfType<Level>();
+        if (tag == "Breakable")
+        {
+            level.CountBlocks();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        DestroyBlock();
+        if (tag == "Breakable")
+        {
+            HandleHit();
+        }
+        else if (tag == "Unbreakable")
+        {
+            //do nothing
+        }
+        
+    }
+
+    private void HandleHit()
+    {
+        timesHit++;
+        if (timesHit == maxHits)
+        {
+            DestroyBlock();
+        }
     }
 
     private void DestroyBlock()
     {
-        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
+        PlayBlockDestroySFX();
         Destroy(gameObject, 0f);
-        gameStatus.AddToScore();
         level.BlockDestroyed();
+        TriggerSparklesVFX();
+    }
+
+    private void PlayBlockDestroySFX()
+    {
+        FindObjectOfType<GameSession>().AddToScore();
+        AudioSource.PlayClipAtPoint(breakSound, Camera.main.transform.position);
+    }
+
+    private void TriggerSparklesVFX()
+    {
+        GameObject sparkles = Instantiate(blockSparklesVFX, transform.position, transform.rotation);
+        Destroy(sparkles, 1f);
     }
 }
