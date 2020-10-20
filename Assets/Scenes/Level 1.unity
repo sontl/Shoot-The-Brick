@@ -13379,10 +13379,20 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 216
       objectReference: {fileID: 0}
+    - target: {fileID: 7757704507547502188, guid: 98303985a609462428d234d9e34cea11,
+        type: 3}
+      propertyPath: isAutoPlayEnabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7757704507547502188, guid: 98303985a609462428d234d9e34cea11,
+        type: 3}
+      propertyPath: gameSpeed
+      value: 2.04
+      objectReference: {fileID: 0}
     - target: {fileID: 7757704507547502190, guid: 98303985a609462428d234d9e34cea11,
         type: 3}
       propertyPath: m_Name
-      value: Game Status
+      value: Game Session
       objectReference: {fileID: 0}
     - target: {fileID: 7757704507547502191, guid: 98303985a609462428d234d9e34cea11,
         type: 3}
